@@ -1,0 +1,366 @@
+body {
+  background-color: #f9e7b6;
+  font-family: "Montserrat", sans-serif;
+  /* display: flex; */
+  overflow: scroll;
+  text-align: center;
+  height: 100vh;
+}
+p {
+  text-align: center;
+  font-size: 1.1em;
+
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+button {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #ff6b6b;
+  z-index: 100;
+  border-radius: 8px;
+  /* Add other styling properties as needed */
+}
+button:hover {
+  background-color: #e64a4a;
+}
+
+h1 {
+  font-size: 32px;
+  color: #ff6b6b;
+}
+
+.container-form {
+  background-color: #fff;
+  /* display: block; */
+  padding: 40px;
+  align-items: center;
+  width: 250px;
+
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Interactive Label */
+.group {
+  position: relative;
+  margin-top: 2em;
+}
+
+.input {
+  font-size: 16px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 90%;
+  border: none;
+  border-bottom: 1px solid #515151;
+  background: transparent;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.custom-label {
+  color: #999;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.input:focus ~ label,
+.input:valid ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #5264ae;
+}
+
+.bar {
+  position: relative;
+  display: block;
+  width: 90%;
+}
+
+.bar:before,
+.bar:after {
+  content: "";
+  height: 2px;
+  width: 0;
+
+  position: absolute;
+  background: #5264ae;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+  left: 50%;
+}
+
+.bar:after {
+  right: 50%;
+}
+
+.input:focus ~ .bar:before,
+.input:focus ~ .bar:after {
+  width: 50%;
+}
+
+.highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.input:focus ~ .highlight {
+  animation: inputHighlighter 0.3s ease;
+}
+
+@keyframes inputHighlighter {
+  from {
+    background: #5264ae;
+  }
+
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+/* --------------------- */
+
+.cartoony-footer {
+  background-color: #ff6b6b;
+  text-align: center;
+  padding: 10px 0;
+  color: #fff;
+}
+
+/* ------------Main page CSS-------------- */
+/* Create Details section */
+.p-cc {
+  color: #333;
+  padding: 5px;
+  word-wrap: break-word;
+}
+
+.form-cc {
+  position: relative;
+  display: block;
+  width: 40.4rem;
+  height: 8rem;
+  margin: 0px auto 20px auto;
+  background: #fff;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+.form-cc input {
+  width: 100%;
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: 1.2em;
+  font-family: inherit;
+  resize: none;
+}
+.form-cc button {
+  position: absolute;
+  right: 18px;
+  bottom: -18px;
+  background: #ff9900;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  width: 60px;
+  height: 36px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+
+  outline: none;
+}
+/* ---- */
+/* ----Card---- */
+.box {
+  /* width: 750px; */
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.cartoon-card {
+  border-radius: 7px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 600px;
+  height: 9rem;
+  margin: 18px;
+  /* text-align: center; */
+}
+.cartoon-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  position: static;
+}
+.card-content {
+  text-align: center;
+  position: relative;
+  top: 5px;
+  word-wrap: break-word;
+}
+.siteURL {
+  color: #c35c5c;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.siteURL:hover {
+  display: block;
+}
+.card-content button {
+  position: relative;
+  top: 25px;
+  left: 200px;
+  width: 40px;
+  border-radius: 10px;
+  margin: 0 5px;
+  padding: 5px 10px 5px 10px;
+}
+/* ---------------------------- */
+
+/* navBAR */
+/* Style for the entire navbar */
+.navbar {
+  background-color: #ff6b6b; /* Red background color */
+  padding: 3px;
+  width: 100%;
+  height: auto;
+
+  display: flex;
+
+  align-items: center; /* makes content come to center in y axis */
+}
+
+/* Style for the logo and text */
+.logo {
+  display: flex;
+  align-items: center;
+  color: white; /* Text color */
+}
+
+.logo img {
+  width: 45px; /* Adjust the logo size as needed */
+
+  margin: 0px 10px; /* Spacing between the logo and text */
+}
+
+nav .button-section {
+  position: fixed;
+  right: 20px;
+  display: block;
+}
+nav button {
+  background-color: hsl(0, 83%, 75%);
+  margin: 4px 10px 0px 20px;
+  width: 100px;
+  height: 40px;
+}
+
+/* ----------------------------------- */
+
+.typewrite {
+  display: inline-flex;
+  color: #e64a4a;
+  font-size: 85px;
+}
+.home-container {
+  width: 100vw;
+  padding-top: 100px;
+
+  text-align: center;
+}
+.notFoundFont {
+  color: #e64a4a;
+  font-size: 12rem;
+  font-family: sans-serif;
+  display: block;
+}
+.notFoundPage {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+footer {
+  left: 0;
+  bottom: 0;
+
+  padding: 1.2em;
+  border-radius: 0.4rem;
+  background-color: #faa9a9;
+  text-align: center;
+}
+.screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+section:not(.button-section) {
+  text-align: center;
+  align-items: center;
+
+  height: 85vh;
+}
+section .about-p {
+  width: 50%;
+  margin-left: 120px;
+  display: inline-block;
+  text-align: left;
+}
+section p {
+  width: 70%;
+  margin-left: 120px;
+  display: block;
+}
+
+img:not(.logo-ico) {
+  width: 200px;
+  display: inline-block;
+  margin-left: 50px;
+  border-radius: 10px;
+}
+
+@media (max-width: 650px) {
+  .navbar p {
+    display: none;
+  }
+}
